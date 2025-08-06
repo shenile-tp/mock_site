@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusTech | Enterprise AI Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#1e40af',
+                        accent: '#3b82f6',
+                        dark: '#1f2937',
+                        light: '#f9fafb',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+        }
+        
+        .hero-pattern {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-brain text-blue-600 text-2xl mr-2"></i>
+                        <span class="text-xl font-bold text-gray-900">NexusTech</span>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="#" class="border-blue-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Home</a>
+                        <a href="./solutions.html" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Solutions</a>
+                        <a href="./industries.html" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Industries</a>
+                        <a href="./resources.html" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Resources</a>
+                        <a href="./about.html" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">About</a>
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                    <button class="px-4 py-2 border border-transparent text-sm font-medium rounded-md text-blue-600 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Sign in</button>
+                    <button class="ml-4 px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Get started</button>
+                </div>
+                <div class="-mr-2 flex items-center sm:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="bg-blue-700 hero-pattern">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
+                    Transform Your Business with AI
+                </h1>
+                <p class="mt-6 max-w-3xl mx-auto text-xl text-blue-100">
+                    NexusTech delivers cutting-edge enterprise solutions powered by artificial intelligence to drive innovation, efficiency, and growth.
+                </p>
+                <div class="mt-10 flex justify-center space-x-4">
+                    <a href="#" class="px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10">
+                        Explore Solutions
+                    </a>
+                    <a href="#" class="px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-800 bg-opacity-60 hover:bg-opacity-70 md:py-4 md:text-lg md:px-10">
+                        Watch Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Logo Cloud -->
+    <!-- <div class="bg-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-center text-sm font-semibold uppercase text-gray-500 tracking-wide">
+                Trusted by innovative companies worldwide
+            </p>
+            <div class="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
+                <div class="col-span-1 flex justify-center">
+                    <img class="h-12" src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg" alt="Tuple">
+                </div>
+                <div class="col-span-1 flex justify-center">
+                    <img class="h-12" src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg" alt="Mirage">
+                </div>
+                <div class="col-span-1 flex justify-center">
+                    <img class="h-12" src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg" alt="StaticKit">
+                </div>
+                <div class="col-span-1 flex justify-center">
+                    <img class="h-12" src="https://tailwindui.com/img/logos/transistor-logo-gray-400.svg" alt="Transistor">
+                </div>
+                <div class="col-span-1 flex justify-center">
+                    <img class="h-12" src="https://tailwindui.com/img/logos/workcation-logo-gray-400.svg" alt="Workcation">
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Features Section -->
+    <div class="py-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Solutions</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Enterprise-grade AI for every need
+                </p>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                    Our comprehensive suite of AI solutions is designed to address the most pressing challenges across industries.
+                </p>
+            </div>
+
+            <div class="mt-10">
+                <div class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+                    <div class="relative">
+                        <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                            <i class="fas fa-robot text-xl"></i>
+                        </div>
+                        <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Predictive Analytics</p>
+                        <p class="mt-2 ml-16 text-base text-gray-500">
+                            Leverage historical data to forecast trends, anticipate customer needs, and optimize operations with our advanced machine learning models.
+                        </p>
+                    </div>
+
+                    <div class="relative">
+                        <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                            <i class="fas fa-comments text-xl"></i>
+                        </div>
+                        <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Conversational AI</p>
+                        <p class="mt-2 ml-16 text-base text-gray-500">
+                            Deploy intelligent chatbots and virtual assistants that understand natural language and provide 24/7 customer support.
+                        </p>
+                    </div>
+
+                    <div class="relative">
+                        <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                            <i class="fas fa-eye text-xl"></i>
+                        </div>
+                        <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Computer Vision</p>
+                        <p class="mt-2 ml-16 text-base text-gray-500">
+                            Automate visual inspection, quality control, and object recognition with our state-of-the-art image processing technology.
+                        </p>
+                    </div>
+
+                    <div class="relative">
+                        <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                            <i class="fas fa-project-diagram text-xl"></i>
+                        </div>
+                        <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Process Automation</p>
+                        <p class="mt-2 ml-16 text-base text-gray-500">
+                            Streamline repetitive tasks, reduce errors, and free up your team for higher-value work with intelligent automation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="bg-blue-600">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8 lg:py-20">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+                    Trusted by enterprises worldwide
+                </h2>
+                <p class="mt-3 text-xl text-blue-100 sm:mt-4">
+                    Our solutions are powering digital transformation across industries.
+                </p>
+            </div>
+            <div class="mt-10 text-center sm:max-w-3xl sm:mx-auto sm:grid sm:grid-cols-3 sm:gap-8">
+                <div>
+                    <p class="text-5xl font-extrabold text-white">
+                        98%
+                    </p>
+                    <p class="mt-2 text-base font-medium text-blue-100">
+                        Customer satisfaction
+                    </p>
+                </div>
+                <div class="mt-10 sm:mt-0">
+                    <p class="text-5xl font-extrabold text-white">
+                        10x
+                    </p>
+                    <p class="mt-2 text-base font-medium text-blue-100">
+                        ROI for clients
+                    </p>
+                </div>
+                <div class="mt-10 sm:mt-0">
+                    <p class="text-5xl font-extrabold text-white">
+                        24/7
+                    </p>
+                    <p class="mt-2 text-base font-medium text-blue-100">
+                        Global support
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="bg-white py-16 sm:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Testimonials</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    What our clients say
+                </p>
+            </div>
+            <div class="mt-10 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <div class="pt-6">
+                    <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                        <div class="-mt-6">
+                            <div>
+                                <span class="inline-flex items-center justify-center p-3 bg-blue-500 rounded-md shadow-lg">
+                                    <i class="fas fa-quote-left text-white text-xl"></i>
+                                </span>
+                            </div>
+                            <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Game-changing technology</h3>
+                            <p class="mt-5 text-base text-gray-500">
+                                NexusTech's predictive analytics transformed our supply chain operations, reducing costs by 27% while improving delivery times.
+                            </p>
+                            <div class="mt-6 flex items-center">
+                                <div class="flex-shrink-0">
+                                    <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-sm font-medium text-gray-900">Sarah Johnson</p>
+                                    <p class="text-sm text-gray-500">COO, Global Retail Corp</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-6">
+                    <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                        <div class="-mt-6">
+                            <div>
+                                <span class="inline-flex items-center justify-center p-3 bg-blue-500 rounded-md shadow-lg">
+                                    <i class="fas fa-quote-left text-white text-xl"></i>
+                                </span>
+                            </div>
+                            <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Exceptional results</h3>
+                            <p class="mt-5 text-base text-gray-500">
+                                Their computer vision system increased our manufacturing quality control accuracy to 99.8%, saving millions in warranty claims.
+                            </p>
+                            <div class="mt-6 flex items-center">
+                                <div class="flex-shrink-0">
+                                    <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-sm font-medium text-gray-900">Michael Chen</p>
+                                    <p class="text-sm text-gray-500">CTO, Advanced Manufacturing Ltd</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-6">
+                    <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                        <div class="-mt-6">
+                            <div>
+                                <span class="inline-flex items-center justify-center p-3 bg-blue-500 rounded-md shadow-lg">
+                                    <i class="fas fa-quote-left text-white text-xl"></i>
+                                </span>
+                            </div>
+                            <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Unmatched support</h3>
+                            <p class="mt-5 text-base text-gray-500">
+                                The NexusTech team worked closely with us to implement their AI solutions, providing exceptional support throughout the process.
+                            </p>
+                            <div class="mt-6 flex items-center">
+                                <div class="flex-shrink-0">
+                                    <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-sm font-medium text-gray-900">David Rodriguez</p>
+                                    <p class="text-sm text-gray-500">CIO, Financial Services Group</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="bg-gray-800">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+            <h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+                <span class="block">Ready to transform your business?</span>
+                <span class="block text-blue-300">Get started with NexusTech today.</span>
+            </h2>
+            <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+                <div class="inline-flex rounded-md shadow">
+                    <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">
+                        Request Demo
+                    </a>
+                </div>
+                <div class="ml-3 inline-flex rounded-md shadow">
+                    <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-gray-50">
+                        Contact Sales
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+            <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+                <div class="space-y-8 xl:col-span-1">
+                    <div class="flex items-center">
+                        <i class="fas fa-brain text-blue-500 text-2xl mr-2"></i>
+                        <span class="text-white text-xl font-bold">NexusTech</span>
+                    </div>
+                    <p class="text-gray-300 text-base">
+                        Empowering enterprises with AI-driven solutions for the digital age.
+                    </p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">
+                                Solutions
+                            </h3>
+                            <ul class="mt-4 space-y-4">
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        Predictive Analytics
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        Conversational AI
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        Computer Vision
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        Process Automation
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-12 md:mt-0">
+                            <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">
+                                Support
+                            </h3>
+                            <ul class="mt-4 space-y-4">
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        Documentation
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        API Reference
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        Community
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        Contact Support
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">
+                                Company
+                            </h3>
+                            <ul class="mt-4 space-y-4">
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        About
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        Careers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        Blog
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        Press
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-12 md:mt-0">
+                            <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">
+                                Legal
+                            </h3>
+                            <ul class="mt-4 space-y-4">
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        Privacy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        Terms
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        Security
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        Compliance
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-8">
+                <p class="text-base text-gray-400 text-center">
+                    &copy; 2023 NexusTech, Inc. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

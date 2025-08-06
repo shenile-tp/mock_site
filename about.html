@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | NexusTech</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#1e40af',
+                        accent: '#3b82f6',
+                        dark: '#1f2937',
+                        light: '#f9fafb',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+        }
+        
+        .team-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .transition-all {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-brain text-blue-600 text-2xl mr-2"></i>
+                        <span class="text-xl font-bold text-gray-900">NexusTech</span>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="./home.html" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Home</a>
+                        <a href="./solutions.html" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Solutions</a>
+                        <a href="./industries.html" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Industries</a>
+                        <a href="./resources.html" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Resources</a>
+                        <a href="./about.html" class="border-blue-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">About</a>
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                    <button class="px-4 py-2 border border-transparent text-sm font-medium rounded-md text-blue-600 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Sign in</button>
+                    <button class="ml-4 px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Get started</button>
+                </div>
+                <div class="-mr-2 flex items-center sm:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="gradient-bg">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
+                Pioneering AI for Business
+            </h1>
+            <p class="mt-6 max-w-3xl mx-auto text-xl text-blue-100">
+                We're on a mission to make artificial intelligence accessible and impactful for enterprises worldwide.
+            </p>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
+                <div>
+                    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                        Our Story
+                    </h2>
+                    <p class="mt-3 text-lg text-gray-500">
+                        Founded in 2015 by a team of AI researchers and industry veterans, NexusTech began with a simple vision: to bridge the gap between cutting-edge artificial intelligence research and real-world business applications.
+                    </p>
+                    <p class="mt-4 text-lg text-gray-500">
+                        Today, we serve Fortune 500 companies and innovative startups alike, delivering measurable results through our enterprise-grade AI solutions.
+                    </p>
+                    <div class="mt-8">
+                        <div class="inline-flex rounded-md shadow">
+                            <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">
+                                Learn about our journey
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 lg:mt-0">
+                    <img class="w-full rounded-lg shadow-lg" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80" alt="Our team">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mission Section -->
+    <div class="bg-gray-50 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Our Mission</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Accelerating the AI-powered future
+                </p>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                    We believe artificial intelligence should be ethical, accessible, and transformative for businesses of all sizes.
+                </p>
+            </div>
+
+            <div class="mt-10">
+                <div class="space-y-10 md:space-y-0 md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10">
+                    <div class="relative">
+                        <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                            <i class="fas fa-lightbulb text-xl"></i>
+                        </div>
+                        <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Innovation</p>
+                        <p class="mt-2 ml-16 text-base text-gray-500">
+                            We push the boundaries of what's possible with AI, developing novel solutions to complex business challenges.
+                        </p>
+                    </div>
+
+                    <div class="relative">
+                        <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                            <i class="fas fa-shield-alt text-xl"></i>
+                        </div>
+                        <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Responsibility</p>
+                        <p class="mt-2 ml-16 text-base text-gray-500">
+                            We develop AI systems that are ethical, transparent, and designed to augment human potential.
+                        </p>
+                    </div>
+
+                    <div class="relative">
+                        <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                            <i class="fas fa-chart-line text-xl"></i>
+                        </div>
+                        <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Impact</p>
+                        <p class="mt-2 ml-16 text-base text-gray-500">
+                            We measure our success by the tangible business outcomes we deliver for our clients.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Team Section -->
+    <div class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Leadership</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Meet our executive team
+                </p>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                    A diverse team of AI experts, industry veterans, and business leaders.
+                </p>
+            </div>
+
+            <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Team Member 1 -->
+                <div class="team-card transition-all bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 hover:border-blue-200">
+                    <div class="p-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <img class="h-16 w-16 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">Sarah Johnson</h3>
+                                <p class="text-sm text-gray-500">Co-Founder & CEO</p>
+                            </div>
+                        </div>
+                        <p class="mt-4 text-base text-gray-500">
+                            Former AI researcher at Stanford with 15+ years of experience bringing AI solutions to market.
+                        </p>
+                        <div class="mt-6 flex space-x-4">
+                            <a href="#" class="text-blue-500 hover:text-blue-700">
+                                <i class="fab fa-linkedin text-xl"></i>
+                            </a>
+                            <a href="#" class="text-blue-500 hover:text-blue-700">
+                                <i class="fab fa-twitter text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="team-card transition-all bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 hover:border-blue-200">
+                    <div class="p-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <img class="h-16 w-16 rounded-full" src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">Michael Chen</h3>
+                                <p class="text-sm text-gray-500">Chief Technology Officer</p>
+                            </div>
+                        </div>
+                        <p class="mt-4 text-base text-gray-500">
+                            Built AI systems at Google and Facebook before joining NexusTech to lead our technical vision.
+                        </p>
+                        <div class="mt-6 flex space-x-4">
+                            <a href="#" class="text-blue-500 hover:text-blue-700">
+                                <i class="fab fa-linkedin text-xl"></i>
+                            </a>
+                            <a href="#" class="text-blue-500 hover:text-blue-700">
+                                <i class="fab fa-github text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="team-card transition-all bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 hover:border-blue-200">
+                    <div class="p-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <img class="h-16 w-16 rounded-full" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">David Rodriguez</h3>
+                                <p class="text-sm text-gray-500">Chief Product Officer</p>
+                            </div>
+                        </div>
+                        <p class="mt-4 text-base text-gray-500">
+                            Product leader with experience scaling enterprise SaaS platforms at Salesforce and Oracle.
+                        </p>
+                        <div class="mt-6 flex space-x-4">
+                            <a href="#" class="text-blue-500 hover:text-blue-700">
+                                <i class="fab fa-linkedin text-xl"></i>
+                            </a>
+                            <a href="#" class="text-blue-500 hover:text-blue-700">
+                                <i class="fab fa-twitter text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Values Section -->
+    <div class="bg-gray-50 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Our Values</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    What drives us every day
+                </p>
+            </div>
+
+            <div class="mt-10">
+                <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+                    <div class="relative bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                        <dt>
+                            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                                <i class="fas fa-users text-xl"></i>
+                            </div>
+                            <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Customer Success First</p>
+                        </dt>
+                        <dd class="mt-2 ml-16 text-base text-gray-500">
+                            We measure our success by our customers' success. Every decision we make is guided by how it will create value for our clients.
+                        </dd>
+                    </div>
+
+                    <div class="relative bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                        <dt>
+                            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                                <i class="fas fa-brain text-xl"></i>
+                            </div>
+                            <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Relentless Innovation</p>
+                        </dt>
+                        <dd class="mt-2 ml-16 text-base text-gray-500">
+                            We're never satisfied with the status quo. We continuously push the boundaries of what's possible with AI to deliver breakthrough solutions.
+                        </dd>
+                    </div>
+
+                    <div class="relative bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                        <dt>
+                            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                                <i class="fas fa-shield-alt text-xl"></i>
+                            </div>
+                            <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Ethical AI</p>
+                        </dt>
+                        <dd class="mt-2 ml-16 text-base text-gray-500">
+                            We develop AI systems that are fair, transparent, and accountable. Ethical considerations are embedded in every stage of our development process.
+                        </dd>
+                    </div>
+
+                    <div class="relative bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                        <dt>
+                            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                                <i class="fas fa-hands-helping text-xl"></i>
+                            </div>
+                            <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Collaboration</p>
+                        </dt>
+                        <dd class="mt-2 ml-16 text-base text-gray-500">
+                            We believe the best solutions emerge from diverse perspectives working together. We partner closely with our clients to understand their unique challenges.
+                        </dd>
+                    </div>
+                </dl>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="bg-gray-800">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:py-20 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
+                <div>
+                    <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+                        Join our team
+                    </h2>
+                    <p class="mt-3 max-w-3xl text-lg text-gray-300">
+                        We're always looking for talented individuals passionate about AI and its potential to transform businesses.
+                    </p>
+                    <div class="mt-8 sm:flex">
+                        <div class="rounded-md shadow">
+                            <a href="#" class="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-gray-50">
+                                View open positions
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 lg:mt-0">
+                    <div class="bg-gray-700 rounded-lg p-6">
+                        <h3 class="text-lg font-medium text-white">Why work at NexusTech?</h3>
+                        <div class="mt-4 space-y-4">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0">
+                                    <i class="h-5 w-5 text-blue-400 fas fa-bolt"></i>
+                                </div>
+                                <p class="ml-3 text-base text-gray-300">
+                                    <span class="font-medium text-white">Cutting-edge projects</span> working with the latest AI technologies
+                                </p>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0">
+                                    <i class="h-5 w-5 text-blue-400 fas fa-bolt"></i>
+                                </div>
+                                <p class="ml-3 text-base text-gray-300">
+                                    <span class="font-medium text-white">Impact at scale</span> with enterprise clients across industries
+                                </p>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0">
+                                    <i class="h-5 w-5 text-blue-400 fas fa-bolt"></i>
+                                </div>
+                                <p class="ml-3 text-base text-gray-300">
+                                    <span class="font-medium text-white">Flexible work</span> with remote and hybrid options
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+            <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+                <div class="space-y-8 xl:col-span-1">
+                    <div class="flex items-center">
+                        <i class="fas fa-brain text-blue-500 text-2xl mr-2"></i>
+                        <span class="text-white text-xl font-bold">NexusTech</span>
+                    </div>
+                    <p class="text-gray-300 text-base">
+                        Empowering enterprises with AI-driven solutions for the digital age.
+                    </p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">
+                                Solutions
+                            </h3>
+                            <ul class="mt-4 space-y-4">
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        Predictive Analytics
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        Conversational AI
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        Computer Vision
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        Process Automation
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-12 md:mt-0">
+                            <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">
+                                Support
+                            </h3>
+                            <ul class="mt-4 space-y-4">
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        Documentation
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        API Reference
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        Community
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        Contact Support
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">
+                                Company
+                            </h3>
+                            <ul class="mt-4 space-y-4">
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        About
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        Careers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        Blog
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        Press
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-12 md:mt-0">
+                            <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">
+                                Legal
+                            </h3>
+                            <ul class="mt-4 space-y-4">
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        Privacy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        Terms
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        Security
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        Compliance
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-8">
+                <p class="text-base text-gray-400 text-center">
+                    &copy; 2023 NexusTech, Inc. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
